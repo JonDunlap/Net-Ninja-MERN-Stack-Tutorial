@@ -11,5 +11,5 @@ app.get('/', (req, res) => {
 
 // Start the server and listen on port set in .env file
 app.listen(process.env.PORT, () => {
-  console.log(`Server started on port ${process.env.PORT}`);
+  console.log(`Server started on http://localhost:${process.env.PORT}`);
 });
