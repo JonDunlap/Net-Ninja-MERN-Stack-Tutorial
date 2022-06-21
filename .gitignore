@@ -8,3 +8,5 @@ yarn-error.log*
 node_modules/
 # MacOS
 .DS_Store
+# .ENV files
+*.env
