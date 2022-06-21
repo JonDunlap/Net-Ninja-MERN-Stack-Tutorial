@@ -1,4 +1,4 @@
-import { Express } from 'express';
+const Express = require('express');
 
 // Initialize express
 const app = Express();
