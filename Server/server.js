@@ -25,7 +25,9 @@ mongoose
   .then(() => {
     // Start the server and listen on port set in .env file
     app.listen(process.env.PORT, () => {
-      console.log(`Server started on http://localhost:${process.env.PORT}`);
+      console.log(
+        `Connected to MongoDB and server started on http://localhost:${process.env.PORT}`
+      );
     });
   })
   .catch((error) => {
