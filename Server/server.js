@@ -1,4 +1,5 @@
 const express = require('express');
+const mongoose = require('mongoose');
 require('dotenv').config();
 
 // Initialize express
@@ -18,7 +19,15 @@ app.use((req, res, next) => {
 // routes
 app.use('/api/workouts', workoutsRouter);
 
-// Start the server and listen on port set in .env file
-app.listen(process.env.PORT, () => {
-  console.log(`Server started on http://localhost:${process.env.PORT}`);
-});
+// Connect to MongoDB
+mongoose
+  .connect(process.env.MONGODB_URI)
+  .then(() => {
+    // Start the server and listen on port set in .env file
+    app.listen(process.env.PORT, () => {
+      console.log(`Server started on http://localhost:${process.env.PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.log(error);
+  });
