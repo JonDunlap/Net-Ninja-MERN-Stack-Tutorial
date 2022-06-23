@@ -4,6 +4,12 @@ require('dotenv').config();
 // Initialize express
 const app = Express();
 
+// middleware
+app.use((req, res, next) => {
+  console.log(req.path, req.method);
+  next();
+});
+
 // routes
 app.get('/', (req, res) => {
   res.json({ msg: 'Hello World' });
