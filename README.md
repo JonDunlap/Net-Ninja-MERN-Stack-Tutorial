@@ -14,13 +14,13 @@
 
 ## API Routes
 
-|     Method | Path          | Description                    |
-| ---------: | ------------- | ------------------------------ |
-|            | **WORKOUTS**  |                                |
-|    **GET** | /workouts     | Gets all the workout documents |
-|   **POST** | /workouts     | Creates a new workout document |
-|    **GET** | /workouts/:id | Get a single workout document  |
-| **DELETE** | /workouts/:id | Delete a single workout        |
-|  **PATCH** | /workouts/:id | Update a single workout        |
+|     Method | Path              | Description                    |
+| ---------: | ----------------- | ------------------------------ |
+|            | **WORKOUTS**      |                                |
+|   **POST** | /api/workouts     | Creates a new workout document |
+|    **GET** | /api/workouts     | Gets all the workout documents |
+|    **GET** | /api/workouts/:id | Get a single workout document  |
+| **DELETE** | /api/workouts/:id | Delete a single workout        |
+|  **PATCH** | /api/workouts/:id | Update a single workout        |
 
 ## Web Routes
