@@ -1,13 +1,15 @@
-const Express = require('express');
+const express = require('express');
 require('dotenv').config();
 
 // Initialize express
-const app = Express();
+const app = express();
 
 // Initialize Routes
 const workoutsRouter = require('./routes/workouts');
 
 // middleware
+app.use(express.json());
+
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
