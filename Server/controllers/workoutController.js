@@ -21,6 +21,7 @@ const createWorkout = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
+
 // get a single workout
 const getWorkout = async (req, res) => {
   const { id } = req.params;
@@ -61,9 +62,28 @@ const deleteWorkout = async (req, res) => {
 };
 
 // update a workout
+const updateWorkout = async (req, res) => {
+  const { id } = req.params;
+
+  // check if the id is a valid mongoose id
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(400).json({ error: 'Invalid ID' });
+  }
+
+  const workout = await Workout.findByIdAndUpdate(id, req.body, { new: true });
+
+  // if there is no workout return an error
+  if (!workout) {
+    return res.status(404).json({ error: 'Workout not found' });
+  }
+
+  res.status(200).json(workout);
+};
 
 module.exports = {
   getWorkouts,
   createWorkout,
   getWorkout,
+  deleteWorkout,
+  updateWorkout,
 };
