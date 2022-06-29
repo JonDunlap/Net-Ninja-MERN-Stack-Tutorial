@@ -70,6 +70,7 @@ const updateWorkout = async (req, res) => {
     return res.status(400).json({ error: 'Invalid ID' });
   }
 
+  // update workout by id with the request body, return the new updated document
   const workout = await Workout.findByIdAndUpdate(id, req.body, { new: true });
 
   // if there is no workout return an error
