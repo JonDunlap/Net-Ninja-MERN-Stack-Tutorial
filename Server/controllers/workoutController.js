@@ -27,7 +27,7 @@ const getWorkout = async (req, res) => {
 
   // check if the id is a valid mongoose id
   if (!mongoose.Types.ObjectId.isValid(id)) {
-    return res.status(404).json({ error: 'Invalid ID' });
+    return res.status(400).json({ error: 'Invalid ID' });
   }
 
   const workout = await Workout.findById(id);
@@ -41,6 +41,24 @@ const getWorkout = async (req, res) => {
 };
 
 // delete a workout
+const deleteWorkout = async (req, res) => {
+  const { id } = req.params;
+
+  // check if the id is a valid mongoose id
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(400).json({ error: 'Invalid ID' });
+  }
+
+  // use shorthand method findByIdAndDelete(id), works the same as findOneAndDelete({ _id: id })
+  const workout = await Workout.findByIdAndDelete(id);
+
+  // if there is no workout return an error
+  if (!workout) {
+    return res.status(404).json({ error: 'Workout not found' });
+  }
+
+  res.status(200).json(workout);
+};
 
 // update a workout
 
