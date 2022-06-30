@@ -24,3 +24,8 @@
 |  **PATCH** | /api/workouts/:id | Update a single workout        |
 
 ## Web Routes
+
+|  Method | Path       | Description                    |
+| ------: | ---------- | ------------------------------ |
+|         | **Public** |                                |
+| **GET** | /          | Landing page, list of workouts |
