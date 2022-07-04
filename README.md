@@ -13,7 +13,7 @@
 
 ## Project
 
-[MERN Stack Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE) from [Net Ninja](https://www.youtube.com/c/TheNetNinja)
+[MERN Stack Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE) from [Net Ninja](https://www.youtube.com/c/TheNetNinja) hosted on Google Cloud Compute Engine and available to view at [workoutapp.jondunlap.com](https://workoutapp.jondunlap.com)
 
 ## Description
 
