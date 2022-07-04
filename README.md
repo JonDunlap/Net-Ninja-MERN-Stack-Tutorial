@@ -21,7 +21,7 @@ A simple MERN application that allows a user to add and remove workouts, will ad
 
 ## Notes
 
-- The application follows the tutorial listed above, however, I added code necessary to host it online using a server hosted on Google Cloud platform so that I could also practice deploying a MERN application. The application can be previewed at [workoutapp.jondunlap.com](workoutapp.jondunlap.com).
+- The application follows the tutorial listed above, however, I added code necessary to host it online using a server hosted on Google Cloud platform so that I could also practice deploying a MERN application. The application can be previewed at [workoutapp.jondunlap.com](https://workoutapp.jondunlap.com).
 - I was able to follow most of the steps from [Brad Traversy's](https://www.youtube.com/c/TraversyMedia) tutorial [Linux Server Setup & MERN Deployment](https://www.youtube.com/watch?v=7aRjGIhwyQM), however, I used a Google Cloud VM instance which presented several issues not covered in Brad's tutorial. I then used Google Domains to add it as a subdomain of my current website by updating the DNS records to point at the servers IP address.
 
 ## Created By:
