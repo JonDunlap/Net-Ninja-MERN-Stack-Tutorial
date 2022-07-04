@@ -9,6 +9,7 @@
 - [Models](#models)
 - [API Routes](#api-routes)
 - [Web Routes](#web-routes)
+- [Issues/ToDo](#issuestodo)
 
 ## Project
 
@@ -71,3 +72,10 @@ A simple MERN application that allows a user to add and remove workouts, will ad
 | ------: | ---------- | ------------------------------ |
 |         | **Public** |                                |
 | **GET** | /          | Landing page, list of workouts |
+
+## Issues/ToDo
+
+- Tutorial used each subdirectory to install packages and dependencies which makes it a bit more difficult to setup and start the application. Next time I will make sure to use the root directory to run `npm init` so that I can add packages and startup scripts to the root directory allowing the developer/user an easier way of starting the application.
+- The tutorial was not meant to be deployed which caused some issues that I had to overcome when I finally decided to follow Brad's tutorial for deploying a MERN application to a Linux server. I had to add some additional code on the backend API so that it could serve the React frontend as well as adding code so that the .env file could be properly read by Node.
+- Since I decided to use Google Cloud instead of Linode for my Linux server there were some additional issues that I had to overcome that were not covered in the MERN deployment tutorial I linked earlier. Some of the issues were easy to find and overcome, needing to set a static IP address so I can add a domain, but others required a bit more research, the version of Ubuntu that Google Cloud defaulted to does not support the latest version of Node.js which caused me to have to remove the node repo that I added and then to install an earlier version of Node.js. But I feel like this was a good experience and allowed me to learn more about Google's cloud platform which seems to be more robust than Linode even though there seems to be more complexity in some areas.
+- I am currently waiting on a follow-up tutorial that will continue on with this application and add authentication for individual users. I look forward to improving this application and learning/practicing some more.
