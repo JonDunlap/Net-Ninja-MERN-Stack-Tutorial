@@ -1,15 +1,18 @@
-# [MERN Stack Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE) from [Net Ninja](https://www.youtube.com/c/TheNetNinja)
+#### Table of Contents
 
-## Table of Contents
+- [Project](#project)
+- [Description](#description)
+- [Notes](#notes)
+- [Created By:](#created-by)
+- [Setting up the app](#setting-up-the-app)
+- [Running app](#running-app)
+- [Models](#models)
+- [API Routes](#api-routes)
+- [Web Routes](#web-routes)
 
-    - [Description](#description)
-    - [Notes](#notes)
-    - [Created By:](#created-by)
-    - [Setting up the app](#setting-up-the-app)
-    - [Running app](#running-app)
-    - [Models](#models)
-    - [API Routes](#api-routes)
-    - [Web Routes](#web-routes)
+## Project
+
+[MERN Stack Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE) from [Net Ninja](https://www.youtube.com/c/TheNetNinja)
 
 ## Description
 
