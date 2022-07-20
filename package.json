@@ -1,0 +1,26 @@
+{
+  "name": "net-ninja-mern-stack-tutorial",
+  "version": "1.0.0",
+  "description": "- [Project](#project) - [Description](#description) - [Notes](#notes) - [Created By:](#created-by) - [Setting up the app](#setting-up-the-app) - [Running app](#running-app) - [Models](#models) - [API Routes](#api-routes) - [Web Routes](#web-routes) - [Issues/ToDo](#issuestodo)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web": "cd frontend; npm run start",
+    "server": "cd Server; npm run dev",
+    "dev": "concurrently 'npm run server' 'npm run web'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonDunlap/Net-Ninja-MERN-Stack-Tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonDunlap/Net-Ninja-MERN-Stack-Tutorial/issues"
+  },
+  "homepage": "https://github.com/JonDunlap/Net-Ninja-MERN-Stack-Tutorial#readme",
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
