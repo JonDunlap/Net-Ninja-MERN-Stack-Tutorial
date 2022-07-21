@@ -2,8 +2,8 @@
 
 - [Project](#project)
 - [Description](#description)
-- [Notes](#notes)
 - [Created By:](#created-by)
+- [Notes](#notes)
 - [Setting up the app](#setting-up-the-app)
 - [Running app](#running-app)
 - [Models](#models)
@@ -13,16 +13,13 @@
 
 ## Project
 
-[MERN Stack Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE) from [Net Ninja](https://www.youtube.com/c/TheNetNinja) hosted on Google Cloud Compute Engine and available to view at [workoutapp.jondunlap.com](https://workoutapp.jondunlap.com)
+[MERN Stack Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE) and [MERN Auth Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g8OhpOZxNdhXggFz2lOuCT) from [Net Ninja](https://www.youtube.com/c/TheNetNinja) hosted on Google Cloud Compute Engine and available to view at [workoutapp.jondunlap.com](https://workoutapp.jondunlap.com)
+
+**Note:** _Server is currently paused, please contact me if you want to view a demo of the application_
 
 ## Description
 
-A simple MERN application that allows a user to add and remove workouts, will add authentication and routes for individual users at a later time. The backend makes use of Mongoose to talk to the MongoDB database as well as to authenticate that all data being passed to the controllers is valid, if it is not valid, an error will be presented to the user as well as using CSS to highlight the required fields. On the frontend it makes use of React useContext to interact with the API depending on the context that is passed to the reducer and carrying out the necessary request and then updating the state.
-
-## Notes
-
-- The application follows the tutorial listed above, however, I added code necessary to host it online using a server hosted on Google Cloud platform so that I could also practice deploying a MERN application. The application can be previewed at [workoutapp.jondunlap.com](https://workoutapp.jondunlap.com).
-- I was able to follow most of the steps from [Brad Traversy's](https://www.youtube.com/c/TraversyMedia) tutorial [Linux Server Setup & MERN Deployment](https://www.youtube.com/watch?v=7aRjGIhwyQM), however, I used a Google Cloud VM instance which presented several issues not covered in Brad's tutorial. I then used Google Domains to add it as a subdomain of my current website by updating the DNS records to point at the servers IP address.
+A simple MERN application that allows a user to add and remove workouts, with authentication and routes for individual users to create their own workouts. The backend makes use of Mongoose to talk to the MongoDB database as well as to authenticate that all data being passed to the controllers is valid, if it is not valid, an error will be presented to the user as well as using CSS to highlight the required fields. On the frontend it makes use of React useContext to interact with the API depending on the context that is passed to the reducer and carrying out the necessary request and then updating the state.
 
 ## Created By:
 
@@ -34,15 +31,19 @@ A simple MERN application that allows a user to add and remove workouts, will ad
 
 **Resume**: [https://standardresume.co/r/jondunlap](https://standardresume.co/r/jondunlap)
 
+## Notes
+
+- The application follows the tutorial listed above, however, I added code necessary to host it online using a server hosted on Google Cloud platform so that I could also practice deploying a MERN application. The application can be previewed at [workoutapp.jondunlap.com](https://workoutapp.jondunlap.com).
+- To deploy the application on the server, I was able to follow most of the steps from [Brad Traversy's](https://www.youtube.com/c/TraversyMedia) tutorial [Linux Server Setup & MERN Deployment](https://www.youtube.com/watch?v=7aRjGIhwyQM), however, I used a Google Cloud VM instance which presented several issues not covered in Brad's tutorial. I then used Google Domains to add it as a subdomain of my current website by updating the DNS records to point at the servers IP address. I also used an SSL certificate and attached it to this server so that all traffic could be sent using HTTPS.
+
 ## Setting up the app
 
 - `cd` into each of the subdirectories and run `npm install` to add the necessary packages
-- Contact developer so that I can temporarily allow all connections to database otherwise the application will not properly connect to the Mongo database
+- Inside of the `server` folder, create a `.env` file and add variables for `PORT` and `MONGODB_URI` with values for your preferred port and a connection string to either a local MongoDB database or a MongoDB Cloud Atlas database.
 
 ## Running app
 
-- `cd server` `npm run dev` - Start API server and connects to the database
-- From a second terminal window, `cd frontend` `npm start` - Starts React frontend
+- From root folder - `npm run dev` - This will make use of concurrently and start the API server, connecting to the database, as well as starting the React frontend
 
 ## Models
 
