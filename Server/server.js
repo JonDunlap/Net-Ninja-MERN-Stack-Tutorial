@@ -8,6 +8,7 @@ const app = express();
 
 // Initialize Routes
 const workoutsRouter = require('./routes/workouts');
+const userRouter = require('./routes/user');
 
 // middleware
 app.use(express.json());
@@ -19,6 +20,7 @@ app.use((req, res, next) => {
 
 // routes
 app.use('/api/workouts', workoutsRouter);
+app.use('/api/user', userRouter);
 
 // Connect to MongoDB
 mongoose
