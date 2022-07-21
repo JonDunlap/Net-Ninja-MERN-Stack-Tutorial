@@ -21,5 +21,8 @@
   "homepage": "https://github.com/JonDunlap/Net-Ninja-MERN-Stack-Tutorial#readme",
   "devDependencies": {
     "concurrently": "^7.3.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1"
   }
 }
