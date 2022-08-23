@@ -3,8 +3,10 @@ const Workout = require('../models/workoutModel');
 
 // get all workouts
 const getWorkouts = async (req, res) => {
+  const user_id = req.user._id;
+
   // get all workouts from the database, sort by date in descending order
-  const workouts = await Workout.find({}).sort({ createdAt: -1 });
+  const workouts = await Workout.find({ user_id }).sort({ createdAt: -1 });
 
   res.status(200).json(workouts);
 };
