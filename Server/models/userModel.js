@@ -34,7 +34,7 @@ userSchema.statics.signup = async function (email, password) {
   const userExists = await this.findOne({ email });
 
   if (userExists) {
-    throw new Error('Email already exists');
+    throw new Error('Email already exists, please login');
   }
 
   const salt = await bcrypt.genSalt(10);
@@ -55,7 +55,7 @@ userSchema.statics.login = async function (email, password) {
   const user = await this.findOne({ email });
 
   if (!user) {
-    throw new Error('Email not found');
+    throw new Error('User not found, check your email or signup');
   }
 
   const isPasswordValid = await bcrypt.compare(password, user.password);
