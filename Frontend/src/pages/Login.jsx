@@ -33,6 +33,16 @@ const Login = () => {
         value={password}
       />
 
+      {/* Message for anyone testing the application */}
+      <div className='dev'>
+        <p>
+          To test the application either create a new user or feel free to use
+          one that I have populated already.
+        </p>
+        <p>Email: test@email.com</p>
+        <p>Password: ABCabc123!</p>
+      </div>
+
       <button disabled={isLoading}>Log in</button>
       {error && <div className='error'>{error}</div>}
     </form>
