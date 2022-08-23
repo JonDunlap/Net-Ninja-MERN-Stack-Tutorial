@@ -131,3 +131,8 @@ form.login {
   background: #fff;
   border-radius: 4px;
 }
+
+/* dev notes */
+.dev {
+  font-size: 0.5em;
+}
