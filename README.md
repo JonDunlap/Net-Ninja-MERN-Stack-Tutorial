@@ -38,6 +38,8 @@ A simple MERN application that allows a user to add and remove workouts, with au
 
 ## Setting up the app
 
+**NOTE:** A preview is available at [workoutapp.jondunlap.com](https://workoutapp.jondunlap.com)
+
 - `cd` into each of the subdirectories and run `npm install` to add the necessary packages
 - Inside of the `server` folder, create a `.env` file and add variables for `PORT` and `MONGODB_URI` with values for your preferred port and a connection string to either a local MongoDB database or a MongoDB Cloud Atlas database.
 
